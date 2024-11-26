@@ -112,3 +112,27 @@ def agregarExperimento(listaExperimentos): #permite agregar un experimento con s
     print("Experimento agregado con exito....")
     
     
+
+
+
+
+
+
+
+def calcular_estadisticas(listaExperimentos): # funcion que permite calcular estadisticas basicas como promedio, maximos y minimos de unn experimento
+    print()
+    calExperimento = input("Ingrese el nombre del experimento")
+    if not listaExperimentos:
+        print()
+        print("No hay experimentos registrados. ")
+        print() 
+        return
+    for experimento in listaExperimentos:
+        promedio = statistics.mean(experimento.resultadosObtenidos)
+        maximo = max(experimento.resultadosObtenidos)
+        minimo = min(experimento.resultadosObtenidos)
+        print()
+        print(f"\nAnalisis de {experimento.nombreExp}")
+        print(f"\nPromedio de {promedio}")
+        print(f"\nAnalisis de {maximo}")
+        print(f"\nAnalisis de {minimo}")
