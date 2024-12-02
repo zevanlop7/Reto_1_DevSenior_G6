@@ -245,7 +245,7 @@ def visualizarExperimentos(listaExperimentos): #permite visualizar todos los exp
         print(f"\nCategoria del Experimento   : {experiment.categoriaExp}")
         print(f"\nResultados del experimento  : {experiment.resultadosObtenidos}")
         print()
-    
+
 def calcular_estadisticas(listaExperimentos): # funcion que permite calcular estadisticas basicas como promedio, maximos y minimos de unn experimento
     print()
     listaPromediosGral = []
@@ -358,4 +358,6 @@ def mostrarMenu(): # funcion que permite mostrar el menu principal del programa 
     #pass
 
 mostrarMenu()
+
+
 
