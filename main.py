@@ -220,7 +220,7 @@ def compararExperimento(listaExperimentos): # funcion que permite comparar dos o
 
     comparacionExperimento(listaIndicesComparacion,listaPromedios, listaMaximos, listaMinimos, resultadosComparacion,listaPromediosGral )#, listadoResultadosGrales)
 
-    def eliminarExperimento(listaExperimentos): # funcion que permite eliminar experimenteos
+def eliminarExperimento(listaExperimentos): # funcion que permite eliminar experimenteos
     if not listaExperimentos:
         print("No hay experimentos registrados")
         return
